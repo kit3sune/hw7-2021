@@ -1,3 +1,7 @@
+// sources include: https://www.w3schools.com/tags/av_met_autoplay.asp, https://www.w3schools.com/tags/av_met_loop.asp, https://www.w3schools.com/tags/av_met_currenttime.asp, https://www.w3schools.com/tags/av_met_play.asp, https://www.w3schools.com/tags/av_met_pause.asp
+// also looked at https://davidwalsh.name/video-playback-speed
+
+
 var video;
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -20,6 +24,10 @@ window.addEventListener("DOMContentLoaded", function() {
 	document.querySelector("#pause").addEventListener("click", function() {
 		console.log("Paused Video");
 		video.pause();
+	});
+	document.querySelector("#slower").addEventListener("click", function() {
+		console.log("Video was slowed by video.playbackRate");
+		video.playbackRate = 0.10;
 	});
  });
 
