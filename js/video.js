@@ -8,11 +8,12 @@ window.addEventListener("DOMContentLoaded", function() {
 	video.autoplay = false;
 	video.loop = false;
 	video.pause();
-	video.currenttime=0;
+	video.currentTime=0;
+	
+	document.querySelector("#play").addEventListener("click", function() {
+		console.log("Play Video");
+		video.play();
+	});
 
-});
-
- document.querySelector("#play").addEventListener("click", function() {
- 	console.log("Play Video");
  });
 
