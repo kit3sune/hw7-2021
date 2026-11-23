@@ -7,6 +7,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	video.autoplay = false;
 	video.loop = false;
+	video.pause();
+	video.currenttime=0;
 
 });
 
