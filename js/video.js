@@ -2,6 +2,8 @@ var video;
 
 window.addEventListener("DOMContentLoaded", function() {
 	console.log("Good job opening the window")
+	console.log("Autoplay is set to false")
+	console.log ("Loop is set to false")
 
 	video = document.querySelector("#player1");
 
@@ -15,5 +17,9 @@ window.addEventListener("DOMContentLoaded", function() {
 		video.play();
 	});
 
+	document.querySelector("#pause").addEventListener("click", function() {
+		console.log("Paused Video");
+		video.pause();
+	});
  });
 
