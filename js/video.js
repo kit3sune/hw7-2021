@@ -1,6 +1,6 @@
 // sources include: https://www.w3schools.com/tags/av_met_autoplay.asp, https://www.w3schools.com/tags/av_met_loop.asp, https://www.w3schools.com/tags/av_met_currenttime.asp, https://www.w3schools.com/tags/av_met_play.asp, https://www.w3schools.com/tags/av_met_pause.asp
-// also looked at https://davidwalsh.name/video-playback-speed for the speed and https://stackoverflow.com/questions/33060291/video-mute-unmute-button-javascript for the mute and unmute
-
+// also looked at https://davidwalsh.name/video-playback-speed for the speed and https://stackoverflow.com/questions/33060291/video-mute-unmute-button-javascript for the mute and unmute, i asked for help from my friend natalie as well since she has some js experince
+// i watched this video too for some help with the tv modes https://www.youtube.com/watch?v=mWWMq11wIW4&t=70s
 
 var video;
 
@@ -65,5 +65,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		
 	
 	});
- });
+
+	document.querySelector("#vintage").addEventListener("click", function() {
+		video.classList.add("oldSchool");
+
+	});
+ 
+});
 
