@@ -70,6 +70,11 @@ window.addEventListener("DOMContentLoaded", function() {
 		video.classList.add("oldSchool");
 
 	});
+
+	document.querySelector("#org").addEventListener("click", function() {
+		video.classList.add("video");
+
+	});
  
 });
 
