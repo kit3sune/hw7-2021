@@ -71,8 +71,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
 	});
 
-	document.querySelector("#org").addEventListener("click", function() {
-		video.classList.add("video");
+	document.querySelector("#orig").addEventListener("click", function() {
+		video.classList.remove("oldSchool");
 
 	});
  
