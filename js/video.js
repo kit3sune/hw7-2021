@@ -66,6 +66,14 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	});
 
+	document.querySelector("#range").addEventListener("click", function() {
+		slider.oninput = function() {
+  		output.innerHTML = this.value;
+}
+
+	});
+	
+	
 	document.querySelector("#vintage").addEventListener("click", function() {
 		video.classList.add("oldSchool");
 
